@@ -190,7 +190,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9bead7c44ad694b4eb3d3b627b2512ae, type: 3}
   m_Color: {r: 0.03137255, g: 0.023529414, b: 0.09411766, a: 1}
   m_FlipX: 0
@@ -247,12 +247,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c003b53db596e44c839c7362558ab04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 12
-  acceleration: 55
-  decceleration: 33
-  velPower: 0.9
-  jumpForce: 12
-  groundDetectDistance: 0.6
+  moveSpeed: 10.5
+  acceleration: 13
+  decceleration: 16
+  velPower: 0.96
+  frictionAmount: 0.1
+  jumpForce: 20.2
+  jumpBufferTime: 0.1
+  jumpCoyoteTime: 0.15
+  jumpCutMultiplier: 0.3
+  gravityScale: 4
+  fallGravityMultiplier: 2
+  groundDetectDistance: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -302,7 +308,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &454851959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -565,7 +571,7 @@ PlatformEffector2D:
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
+  m_SurfaceArc: 154.74
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
@@ -633,7 +639,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9bead7c44ad694b4eb3d3b627b2512ae, type: 3}
   m_Color: {r: 0.2924528, g: 0.14536414, b: 0.07863118, a: 1}
   m_FlipX: 0

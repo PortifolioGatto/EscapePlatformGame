@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.W)) pMove.JumpFunction();
+        if(Input.GetKeyDown(KeyCode.W)) pMove.OnJump();
+        if(Input.GetKeyUp(KeyCode.W)) pMove.OnJumpUp();
 
         pMove.ChangeMoveVelocity(Input.GetAxisRaw("Horizontal"));
     }
